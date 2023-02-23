@@ -22,17 +22,20 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, PanCraft.MOD_ID);
 
+    public static final RegistryObject<Block> SULFUR_BLOCK = registerBlock("sulfur_block",
+            ()->new Block(BlockBehaviour.Properties.of(Material.SNOW).strength(1)), ModCreativeModeTab.PANCRAFT_TAB);
+
     public static final RegistryObject<Block> SULFUR_ORE = registerBlock("sulfur_ore",
-            ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(),
+            ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.PANCRAFT_TAB);
     public static final RegistryObject<Block> DEEPSLATE_SULFUR_ORE = registerBlock("deepslate_sulfur_ore",
-            ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(),
+            ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.PANCRAFT_TAB);
     public static final RegistryObject<Block> NITER_ORE = registerBlock("niter_ore",
-            ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(),
+            ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.PANCRAFT_TAB);
     public static final RegistryObject<Block> DEEPSLATE_NITER_ORE = registerBlock("deepslate_niter_ore",
-            ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(),
+            ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTab.PANCRAFT_TAB);
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

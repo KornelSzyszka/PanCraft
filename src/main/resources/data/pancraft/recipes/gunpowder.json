@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+        "item": "pancraft:sulfur"
+    },
+    "X": {
+      "item": "minecraft:charcoal"
+    },
+    "Z": {
+      "item": "pancraft:niter"
+    }
+  },
+  "pattern": [
+    "X#Z",
+    "ZZZ",
+    "ZZZ"
+  ],
+  "result": {
+    "item": "minecraft:gunpowder",
+    "count": 9
+  }
+}

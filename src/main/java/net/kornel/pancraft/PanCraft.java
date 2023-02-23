@@ -3,6 +3,8 @@ package net.kornel.pancraft;
 import com.mojang.logging.LogUtils;
 import net.kornel.pancraft.block.ModBlocks;
 import net.kornel.pancraft.item.ModItems;
+import net.kornel.pancraft.world.feature.ModConfiguredFeatures;
+import net.kornel.pancraft.world.feature.ModPlacedFeatures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,6 +25,9 @@ public class PanCraft {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
