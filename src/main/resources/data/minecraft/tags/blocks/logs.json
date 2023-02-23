@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "pancraft:hevea_log",
+    "pancraft:hevea_wood",
+    "pancraft:stripped_hevea_log",
+    "pancraft:stripped_hevea_wood"
+  ]
+}

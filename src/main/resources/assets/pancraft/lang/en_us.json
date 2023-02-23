@@ -8,5 +8,13 @@
   "block.pancraft.deepslate_niter_ore": "Deepslate Niter Ore",
   "block.pancraft.sulfur_block": "Sulfur Block",
 
+  "block.pancraft.hevea_leaves": "Rubber Tree Leaves",
+  "block.pancraft.hevea_log": "Rubber Tree Log",
+  "block.pancraft.hevea_planks": "Rubber Tree Planks",
+  "block.pancraft.hevea_sapling": "Rubber Tree Sapling",
+  "block.pancraft.hevea_wood": "Rubber Tree Wood",
+  "block.pancraft.stripped_hevea_log": "Stripped Rubber Tree Log",
+  "block.pancraft.stripped_hevea_wood": "Stripped Rubber Tree Wood",
+
   "itemGroup.pancraft": "Pancraft"
 }

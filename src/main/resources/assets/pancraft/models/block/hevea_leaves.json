@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "pancraft:block/hevea_leaves"
+  },
+  "render_type": "cutout"
+}
