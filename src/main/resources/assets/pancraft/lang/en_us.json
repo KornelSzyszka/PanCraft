@@ -1,0 +1,11 @@
+{
+  "item.pancraft.niter": "Niter",
+  "item.pancraft.sulfur": "Sulfur",
+
+  "block.pancraft.sulfur_ore": "Sulfur Ore",
+  "block.pancraft.deepslate_sulfur_ore": "Deepslate Sulfur Ore",
+  "block.pancraft.niter_ore": "Niter Ore",
+  "block.pancraft.deepslate_niter_pre": "Deepslate Niter Ore",
+
+  "itemGroup.pancraft": "Pancraft"
+}

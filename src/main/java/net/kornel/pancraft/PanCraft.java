@@ -1,6 +1,8 @@
 package net.kornel.pancraft;
 
 import com.mojang.logging.LogUtils;
+import net.kornel.pancraft.block.ModBlocks;
+import net.kornel.pancraft.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -18,6 +20,9 @@ public class PanCraft {
 
     public PanCraft() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
