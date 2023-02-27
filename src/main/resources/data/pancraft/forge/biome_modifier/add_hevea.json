@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_wet",
+  "features": "pancraft:hevea_placed",
+  "step": "vegetal_decoration"
+}

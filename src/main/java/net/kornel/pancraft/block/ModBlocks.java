@@ -32,33 +32,31 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SULFUR_ORE = registerBlock("sulfur_ore",
             ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2).requiresCorrectToolForDrops(),
-                    UniformInt.of(3,7)), ModCreativeModeTab.PANCRAFT_TAB);
+                    UniformInt.of(1,3)), ModCreativeModeTab.PANCRAFT_TAB);
     public static final RegistryObject<Block> DEEPSLATE_SULFUR_ORE = registerBlock("deepslate_sulfur_ore",
             ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2).requiresCorrectToolForDrops(),
-                    UniformInt.of(3,7)), ModCreativeModeTab.PANCRAFT_TAB);
+                    UniformInt.of(1,3)), ModCreativeModeTab.PANCRAFT_TAB);
+    public static final RegistryObject<Block> NETHER_SULFUR_ORE = registerBlock("nether_sulfur_ore",
+            ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2).requiresCorrectToolForDrops(),
+                    UniformInt.of(1,3)), ModCreativeModeTab.PANCRAFT_TAB);
     public static final RegistryObject<Block> NITER_ORE = registerBlock("niter_ore",
             ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2).requiresCorrectToolForDrops(),
-                    UniformInt.of(3,7)), ModCreativeModeTab.PANCRAFT_TAB);
+                    UniformInt.of(1,3)), ModCreativeModeTab.PANCRAFT_TAB);
     public static final RegistryObject<Block> DEEPSLATE_NITER_ORE = registerBlock("deepslate_niter_ore",
             ()->new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2).requiresCorrectToolForDrops(),
-                    UniformInt.of(3,7)), ModCreativeModeTab.PANCRAFT_TAB);
+                    UniformInt.of(1,3)), ModCreativeModeTab.PANCRAFT_TAB);
 
     public static final RegistryObject<Block> HEVEA_LOG = registerBlock("hevea_log",
-            ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.PANCRAFT_TAB);
+            ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModCreativeModeTab.PANCRAFT_TAB);
     public static final RegistryObject<Block> HEVEA_WOOD = registerBlock("hevea_wood",
-            ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.PANCRAFT_TAB);
+            ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)), ModCreativeModeTab.PANCRAFT_TAB);
     public static final RegistryObject<Block> STRIPPED_HEVEA_LOG = registerBlock("stripped_hevea_log",
-            ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.PANCRAFT_TAB);
+            ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)), ModCreativeModeTab.PANCRAFT_TAB);
     public static final RegistryObject<Block> STRIPPED_HEVEA_WOOD = registerBlock("stripped_hevea_wood",
-            ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_DARK_OAK_WOOD)
-                    .requiresCorrectToolForDrops()), ModCreativeModeTab.PANCRAFT_TAB);
+            ()->new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_DARK_OAK_WOOD)), ModCreativeModeTab.PANCRAFT_TAB);
 
     public static final RegistryObject<Block> HEVEA_PLANKS = registerBlock("hevea_planks",
-            ()->new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
-                    .requiresCorrectToolForDrops()) {
+            ()->new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
